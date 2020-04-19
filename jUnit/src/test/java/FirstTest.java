@@ -33,8 +33,9 @@ public class FirstTest {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             logger.info("Running browser is : " + browser);
+        }
 
-        } else if (browser.equalsIgnoreCase("firefox")) {
+        else if (browser.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
             logger.info("Running browser is : " + browser);
